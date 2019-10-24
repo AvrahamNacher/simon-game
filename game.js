@@ -110,5 +110,6 @@ function preventButtonClicks() {
   $(".btn").off("click");
   //alert("preventing clicks");
 }
-// wait for keypress to initialize game
+// wait for keypress or (or click for smartphones) to initialize game
 $(document).keypress(initialize);
+$(document).mousedown(initialize);
